@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-//        task1();
-//        task2();
-//        task3();
-//        task4();
-//        task5();
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
         task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -78,6 +80,23 @@ public class Main {
             contribution = contribution + (contribution * 7) / 100;
             if (month % 6 == 0) {
                 System.out.println("месяц " + month + " сумма накоплений " + contribution + "");
+            }
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int date = 2;
+        for (; date <= 31; date = date + 7) {
+            System.out.println("Сегодня пятница, " + date + "е число. Необходимо подготовить отчет");
+        }
+    }
+
+    public static void task8() {
+        int year = 1822;
+        for (; year <= 2122; year = year + 1) {
+            if (year % 79 == 0) {
+                System.out.println(year);
             }
         }
     }
